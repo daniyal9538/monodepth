@@ -29,7 +29,7 @@ from average_gradients import *
 parser = argparse.ArgumentParser(description='Monodepth TensorFlow implementation.')
 
 parser.add_argument('--encoder',          type=str,   help='type of encoder, vgg or resnet50', default='vgg')
-parser.add_argument('--image_path',       type=str,   help='path to the image', default = 'content/1.jpg')
+parser.add_argument('--image_path',       type=str,   help='path to the image', default = 'content/monodepth/1.jpg')
 parser.add_argument('--checkpoint_path',  type=str,   help='path to a specific checkpoint to load', default = 'content/monodepth/model_city2kitti')
 parser.add_argument('--input_height',     type=int,   help='input height', default=256)
 parser.add_argument('--input_width',      type=int,   help='input width', default=512)
