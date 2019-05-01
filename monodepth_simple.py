@@ -34,7 +34,7 @@ parser.add_argument('--checkpoint_path',  type=str,   help='path to a specific c
 parser.add_argument('--input_height',     type=int,   help='input height', default=256)
 parser.add_argument('--input_width',      type=int,   help='input width', default=512)
 
-args = parser.parse_args()
+args = parser.parse_args(args)
 
 def post_process_disparity(disp):
     _, h, w = disp.shape
